@@ -107,6 +107,7 @@ As imagens e nomes de animes utilizados servem apenas como referência visual pa
 
 Nenhum episódio ou conteúdo audiovisual protegido por direitos autorais é hospedado neste projeto.
 
+Link do Projeto: 👉🏼https://github.com/Thaislima339/site_otaku.git
 ---
 
 ### Projeto desenvolvido para fins de estudo.
