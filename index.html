@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Otaku - Animes</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- MENU -->
+
+    <header class="menu">
+
+        <div class="logo">
+            <button class="botao-menu-lateral" id="abrirMenuLateral" type="button" aria-label="Abrir menu">☰</button>
+            <span>OTAKU</span>
+        </div>
+
+
+        <div class="pesquisa">
+
+            🔍
+
+            <input
+                type="text"
+                placeholder="Pesquisar anime..."
+            >
+
+        </div>
+
+
+        <nav>
+
+            <a href="index.html">
+                Início
+            </a>
+
+            <a href="#populares">
+                Animes
+            </a>
+
+            <a href="#populares">
+                Populares
+            </a>
+
+            <a href="favoritos.html">
+                ❤️ Favoritos
+            </a>
+
+        </nav>
+
+
+        <!-- ÁREA DO USUÁRIO -->
+
+        <div class="area-usuario">
+
+            <!-- APARECE SE NÃO ESTIVER LOGADO -->
+
+            <button
+                class="login"
+                id="botaoLogin"
+            >
+                Login
+            </button>
+
+
+            <!-- APARECE QUANDO ESTIVER LOGADO -->
+
+            <div
+                class="usuario-logado"
+                id="usuarioLogado"
+            >
+
+                <button
+                    class="botao-usuario"
+                    id="botaoUsuario"
+                >
+
+                    👤
+
+                    <span id="nomeUsuario">
+                        Usuário
+                    </span>
+
+                    ▾
+
+                </button>
+
+
+                <!-- MENU QUE ABRE -->
+
+                <div
+                    class="menu-usuario"
+                    id="menuUsuario"
+                >
+
+                    <div class="menu-usuario-topo">
+
+                        <strong id="nomeMenu">
+                            Usuário
+                        </strong>
+
+                        <span id="emailMenu">
+                            email@email.com
+                        </span>
+
+                    </div>
+
+
+                    <a href="favoritos.html">
+                        ❤️ Meus Favoritos
+                    </a>
+
+
+                    <button id="botaoSair">
+                        🚪 Sair
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <!-- MENU LATERAL -->
+    <div class="menu-overlay" id="menuOverlay"></div>
+
+    <aside class="menu-lateral" id="menuLateral" aria-hidden="true">
+        <div class="menu-lateral-topo">
+            <div class="menu-lateral-logo">OTAKU</div>
+            <button class="fechar-menu-lateral" id="fecharMenuLateral" type="button" aria-label="Fechar menu">✕</button>
+        </div>
+
+        <nav class="menu-lateral-links">
+            <a href="index.html">🏠 Início</a>
+            <a href="#populares">🎌 Animes</a>
+            <a href="#populares">🔥 Populares</a>
+            <a href="favoritos.html">❤️ Favoritos</a>
+            <a href="#continueAssistindo">▶ Continue assistindo</a>
+            <a href="login.html" id="linkContaLateral">👤 Login</a>
+        </nav>
+    </aside>
+
+
+    <!-- CONTEÚDO -->
+
+    <main>
+
+
+        <!-- BANNER -->
+
+        <section class="banner">
+
+            <div class="banner-texto">
+
+                <div class="em-alta">
+                    🔥 EM ALTA
+                </div>
+
+                <h1>
+                    Demon Slayer
+                </h1>
+
+
+                <div class="informacoes">
+
+                    ⭐ 9.0
+                    &nbsp; • &nbsp;
+                    2019
+                    &nbsp; • &nbsp;
+                    Ação
+
+                </div>
+
+
+                <p>
+                    Tanjiro parte em uma jornada perigosa
+                    para enfrentar demônios e proteger
+                    aqueles que ama.
+                </p>
+
+
+                <div class="botoes">
+
+                    <button class="assistir">
+                        ▶ Assistir agora
+                    </button>
+
+                    <button class="detalhes">
+                        + Detalhes
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+        <!-- CONTINUE ASSISTINDO -->
+        <section class="continue-assistindo" id="continueAssistindo">
+            <div class="titulo-secao">
+                <h2>▶ Continue assistindo</h2>
+            </div>
+            <div class="continue-lista" id="continueLista"></div>
+        </section>
+
+        <!-- POPULARES -->
+
+        <section
+            class="populares"
+            id="populares"
+        >
+
+            <div class="titulo-secao">
+
+                <h2>
+                    🔥 Animes Populares
+                </h2>
+
+                <a href="#populares">
+                    Ver todos →
+                </a>
+
+            </div>
+
+
+            <div class="cards">
+
+
+                <!-- NARUTO -->
+
+                <div class="card" data-anime="naruto" role="link" tabindex="0">
+
+                    <div class="imagem-card card1">
+
+                        <span class="nota">
+                            ⭐ 9.1
+                        </span>
+
+                    </div>
+
+                    <h3>Naruto</h3>
+
+                    <p>
+                        Ação • Aventura
+                    </p>
+
+                </div>
+
+
+                <!-- SOLO LEVELING -->
+
+                <div class="card" data-anime="solo-leveling" role="link" tabindex="0">
+
+                    <div class="imagem-card card2">
+
+                        <span class="nota">
+                            ⭐ 9.4
+                        </span>
+
+                    </div>
+
+                    <h3>
+                        Solo Leveling
+                    </h3>
+
+                    <p>
+                        Ação • Fantasia
+                    </p>
+
+                </div>
+
+
+                <!-- BLEACH -->
+
+                <div class="card" data-anime="bleach" role="link" tabindex="0">
+
+                    <div class="imagem-card card3">
+
+                        <span class="nota">
+                            ⭐ 8.9
+                        </span>
+
+                    </div>
+
+                    <h3>Bleach</h3>
+
+                    <p>
+                        Ação • Sobrenatural
+                    </p>
+
+                </div>
+
+
+                <!-- DEMON SLAYER -->
+
+                <div class="card" data-anime="demon-slayer" role="link" tabindex="0">
+
+                    <div class="imagem-card card4">
+
+                        <span class="nota">
+                            ⭐ 9.0
+                        </span>
+
+                    </div>
+
+                    <h3>
+                        Demon Slayer
+                    </h3>
+
+                    <p>
+                        Ação • Fantasia
+                    </p>
+
+                </div>
+
+
+                <!-- JUJUTSU -->
+
+                <div class="card" data-anime="jujutsu-kaisen" role="link" tabindex="0">
+
+                    <div class="imagem-card card5">
+
+                        <span class="nota">
+                            ⭐ 8.8
+                        </span>
+
+                    </div>
+
+                    <h3>
+                        Jujutsu Kaisen
+                    </h3>
+
+                    <p>
+                        Ação • Sobrenatural
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- LANÇAMENTOS -->
+
+        <section class="lancamentos">
+
+            <div class="titulo-secao">
+
+                <h2>
+                    ✨ Últimos Lançamentos
+                </h2>
+
+            </div>
+
+
+            <div class="episodios">
+
+
+                <div class="episodio">
+
+                    <div class="numero">
+                        01
+                    </div>
+
+                    <div>
+
+                        <h3>
+                            Demon Slayer
+                        </h3>
+
+                        <p>
+                            Episódio 12 • Legendado
+                        </p>
+
+                    </div>
+
+                    <button>▶</button>
+
+                </div>
+
+
+                <div class="episodio">
+
+                    <div class="numero">
+                        02
+                    </div>
+
+                    <div>
+
+                        <h3>
+                            Solo Leveling
+                        </h3>
+
+                        <p>
+                            Episódio 08 • Legendado
+                        </p>
+
+                    </div>
+
+                    <button>▶</button>
+
+                </div>
+
+
+                <div class="episodio">
+
+                    <div class="numero">
+                        03
+                    </div>
+
+                    <div>
+
+                        <h3>
+                            Jujutsu Kaisen
+                        </h3>
+
+                        <p>
+                            Episódio 15 • Legendado
+                        </p>
+
+                    </div>
+
+                    <button>▶</button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- RODAPÉ -->
+
+    <footer>
+
+        <div class="footer-logo">
+            OTAKU
+        </div>
+
+        <p>
+            Seu mundo de animes em um só lugar.
+        </p>
+
+        <p class="copyright">
+            © 2026 criado por Thais Lima. Projeto para estudos.
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

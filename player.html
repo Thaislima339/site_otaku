@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Assistindo | Otaku</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="pagina-player">
+
+    <!-- MENU -->
+
+    <header class="menu">
+
+        <div class="logo">
+            ☰ <span>OTAKU</span>
+        </div>
+
+        <div class="voltar-home">
+
+            <a id="voltarAnime" href="index.html">
+                ← Voltar para o anime
+            </a>
+
+        </div>
+
+    </header>
+
+
+    <!-- CONTEÚDO -->
+
+    <main class="player-container">
+
+
+        <div class="player-cabecalho">
+
+            <span class="assistindo-agora">
+                🔴 ASSISTINDO AGORA
+            </span>
+
+            <h1 id="playerNome">
+                Demon Slayer
+            </h1>
+
+            <p id="playerEpisodio">
+                Episódio 1
+            </p>
+
+        </div>
+
+
+        <!-- PLAYER -->
+
+        <section class="video-player">
+
+            <div class="video-fundo">
+
+                <div class="play-gigante"
+                     id="playGigante">
+
+                    ▶
+
+                </div>
+
+
+                <div class="video-mensagem">
+
+                    <h2 id="videoTitulo">
+                        Demon Slayer
+                    </h2>
+
+                    <p id="videoStatus">
+                        Clique no botão para iniciar
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- CONTROLES -->
+
+            <div class="controles-player">
+
+                <button id="playControle">
+                    ▶
+                </button>
+
+                <div class="barra-progresso">
+
+                    <div
+                        class="progresso"
+                        id="progresso">
+                    </div>
+
+                </div>
+
+                <span id="tempoVideo">
+                    00:00 / 24:00
+                </span>
+
+                <button id="telaCheia">
+                    ⛶
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- INFORMAÇÕES -->
+
+        <section class="player-informacoes">
+
+            <div>
+
+                <h2 id="tituloAbaixo">
+                    Demon Slayer
+                </h2>
+
+                <p id="descricaoAbaixo">
+                    Episódio 1 • Legendado
+                </p>
+
+            </div>
+
+            <div class="player-acoes">
+
+                <button id="episodioAnterior">
+                    ← Anterior
+                </button>
+
+                <button id="proximoEpisodio">
+                    Próximo →
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- LISTA DE EPISÓDIOS -->
+
+        <section class="player-lista">
+
+            <h2>📺 Episódios</h2>
+
+            <div class="mini-episodios"
+                 id="miniEpisodios">
+
+                <!-- O JAVASCRIPT CRIA A LISTA -->
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+    <script src="player.js"></script>
+
+</body>
+
+</html>

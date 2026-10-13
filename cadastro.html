@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Criar conta | Otaku</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="pagina-login">
+
+    <header class="menu">
+
+        <div class="logo">
+            ☰ <span>OTAKU</span>
+        </div>
+
+        <div class="voltar-home">
+
+            <a href="index.html">
+                ← Voltar para o início
+            </a>
+
+        </div>
+
+    </header>
+
+
+    <main class="login-container">
+
+        <div class="login-caixa">
+
+            <div class="login-topo">
+
+                <span>
+                    ✨ NOVA CONTA
+                </span>
+
+                <h1>Criar conta</h1>
+
+                <p>
+                    Faça seu cadastro no Otaku.
+                </p>
+
+            </div>
+
+
+            <form id="formCadastro">
+
+
+                <div class="campo-login">
+
+                    <label for="cadastroNome">
+                        Nome
+                    </label>
+
+                    <input
+                        type="text"
+                        id="cadastroNome"
+                        placeholder="Seu nome"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="campo-login">
+
+                    <label for="cadastroEmail">
+                        E-mail
+                    </label>
+
+                    <input
+                        type="email"
+                        id="cadastroEmail"
+                        placeholder="seuemail@email.com"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="campo-login">
+
+                    <label for="cadastroSenha">
+                        Senha
+                    </label>
+
+                    <input
+                        type="password"
+                        id="cadastroSenha"
+                        placeholder="Crie uma senha"
+                        minlength="4"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="campo-login">
+
+                    <label for="confirmarSenha">
+                        Confirmar senha
+                    </label>
+
+                    <input
+                        type="password"
+                        id="confirmarSenha"
+                        placeholder="Digite novamente"
+                        minlength="4"
+                        required
+                    >
+
+                </div>
+
+
+                <p
+                    class="mensagem-login"
+                    id="mensagemCadastro">
+                </p>
+
+
+                <button
+                    type="submit"
+                    class="botao-entrar"
+                >
+                    Criar conta
+                </button>
+
+            </form>
+
+
+            <div class="ir-cadastro">
+
+                <p>
+                    Já possui uma conta?
+                </p>
+
+                <a href="login.html">
+                    Fazer login
+                </a>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <script src="cadastro.js"></script>
+
+</body>
+
+</html>

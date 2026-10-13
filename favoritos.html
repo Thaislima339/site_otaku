@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Meus Favoritos | Otaku</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="pagina-favoritos">
+
+    <!-- MENU -->
+
+    <header class="menu">
+
+        <div class="logo">
+            ☰ <span>OTAKU</span>
+        </div>
+
+        <div class="voltar-home">
+
+            <a href="index.html">
+                ← Voltar para o início
+            </a>
+
+        </div>
+
+    </header>
+
+
+    <!-- CONTEÚDO -->
+
+    <main class="favoritos-container">
+
+        <div class="favoritos-cabecalho">
+
+            <span>❤️ SUA LISTA</span>
+
+            <h1>Meus Favoritos</h1>
+
+            <p>
+                Os animes que você marcou como favoritos
+                aparecem aqui.
+            </p>
+
+        </div>
+
+
+        <!-- JAVASCRIPT COLOCA OS CARDS AQUI -->
+
+        <div
+            class="favoritos-grid"
+            id="listaFavoritos">
+        </div>
+
+
+        <!-- APARECE SE NÃO TIVER FAVORITOS -->
+
+        <div
+            class="favoritos-vazio"
+            id="favoritosVazio">
+
+            <div class="coracao-vazio">
+                ♡
+            </div>
+
+            <h2>
+                Sua lista está vazia
+            </h2>
+
+            <p>
+                Escolha alguns animes e clique em
+                Favoritar para eles aparecerem aqui.
+            </p>
+
+            <a href="index.html">
+                Explorar animes
+            </a>
+
+        </div>
+
+    </main>
+
+
+    <script src="favoritos.js"></script>
+
+</body>
+
+</html>
